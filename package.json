@@ -1,0 +1,11 @@
+{
+  "name": "geojson-csv-join",
+  "version": "0.1.0",
+  "description": "Add data from a CSV to your geoJSON",
+  "main": "index.js",
+  "author": "Gavin Rehkemper",
+  "license": "MIT",
+  "dependencies": {
+    "csv": "~0.3.7"
+  }
+}
