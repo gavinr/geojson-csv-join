@@ -50,9 +50,9 @@ var getJoinedData = function(geojson, csvData, joinColumnIndex) {
 	geojson.features.forEach(function(feature) {
 		if (feature.hasOwnProperty('properties') && feature.properties.hasOwnProperty(geoJsonColumnName)) {
 			var searchValue = feature.properties[geoJsonColumnName];
-			if (castColumnsToNumber) {
+			/*if (castColumnsToNumber) {
 				searchValue = parseInt(searchValue);
-			}
+			}*/
 
 			var additionalValuesObj = loopThroughCsv(csvData, joinColumnIndex, searchValue);
 			if (additionalValuesObj !== false) {
